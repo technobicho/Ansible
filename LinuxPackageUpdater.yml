@@ -2,7 +2,7 @@
 - hosts: all
 
   become: True
-
+  become_method: enable
   tasks:
     - name: APT Package Updater
       apt:
