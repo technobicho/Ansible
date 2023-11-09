@@ -2,6 +2,7 @@
 - hosts: all
 
   become: true
+  become_user: techno
   tasks:
     - name: APT Package Updater
       apt:
