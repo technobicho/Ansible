@@ -1,8 +1,7 @@
 ---
 - hosts: all
 
-  become: True
-  become_method: enable
+  sudo: yes
   tasks:
     - name: APT Package Updater
       apt:
