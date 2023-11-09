@@ -1,7 +1,7 @@
 ---
 - hosts: all
     
-    - name: Update apt cache
-      apt:
-        update_cache: yes
+    - name: Upgrade the OS (apt-get dist-upgrade)
+      ansible.builtin.apt:
+        upgrade: dist
       become: yes
