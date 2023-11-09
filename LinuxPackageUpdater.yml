@@ -1,9 +1,8 @@
 ---
 - hosts: all
-
-  become: true
-  tasks:
+    tasks:
     - name: APT Package Updater
       ansible.builtin.apt:
         upgrade: dist
         update_cache: yes
+      become: yes
