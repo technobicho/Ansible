@@ -8,10 +8,16 @@
       apt:
         upgrade: yes
         update_cache: yes
-    - name: install vim and ensure its a the latest version
-      action: apt name=vim state=present update_cache=yes
-    - name: install htop and ensure its a the latest version
-      action: apt name=htop state=present update_cache=yes
-    - name: install gimp and ensure its a the latest version
-      action: apt name=gimp state=present update_cache=yes
+    - name: install vim
+      apt:
+        name: vim
+        state: latest
+    - name: install htop
+      apt:
+        name: htop
+        state: latest
+    - name: install gimp
+      apt:
+        name: gimp
+        state: latest
     
