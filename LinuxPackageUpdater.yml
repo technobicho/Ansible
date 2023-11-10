@@ -20,10 +20,6 @@
       apt:
         name: gimp
         state: latest
-    - name: install gimp
-      apt:
-        name: gimp
-        state: latest
     - name: install synaptic
       apt:
         name: synaptic
