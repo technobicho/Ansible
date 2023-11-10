@@ -12,4 +12,12 @@
       apt:
         name: vim
         state: latest
+    - name: htop
+      apt:
+        name: htop
+        state: latest
+    - name: gimp
+      apt:
+        name: gimp
+        state: latest
     
