@@ -15,9 +15,9 @@
     - name: install htop
       apt:
         name: htop
-        state: latest
+        state: present
     - name: install gimp
       apt:
         name: gimp
-        state: latest
+        state: present
     
