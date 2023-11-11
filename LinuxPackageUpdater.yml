@@ -28,4 +28,8 @@
       apt:
         name: synaptic
         state: latest
+    - name: install net-tools
+      apt:
+        name: net-tools
+        state: latest
     
